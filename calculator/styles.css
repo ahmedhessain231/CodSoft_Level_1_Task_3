@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #7f5a83; /* Purple */
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    border:  1px solid #7f4a7f;
+    padding: 10px;
+    font-size: 24px;
+    outline: none;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #af8ab0; /* Light Purple */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8d628d; /* Darker Purple */
+}
+
+.operator {
+    background-color: #9e63a7; /* Lighter Purple */
+}
+
+.operator:hover {
+    background-color: #7f4a7f; /* Darker Lighter Purple */
+}
+
+.zero {
+    grid-column: span 2;
+}
+.calculate{
+    grid-column: span 3;
+}
+.calculate, .reset {
+    background-color: #5a4760; /* Dark Purple */
+    color: #fff;
+}
+
+.calculate:hover, .reset:hover {
+    background-color: #3f2d3f; /* Darker Dark Purple */
+}
